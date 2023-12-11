@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: khvkazurecloud 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: khvkazurecloud
+  template:
+    metadata:
+      labels:
+        app: khvkazurecloud 
+    spec:
+      containers:
+        - name: khvkazurecloud 
+          image: ccazurepetstorecr.azurecr.io/khvkazurecloud
+          ports:
+          - containerPort: 80
