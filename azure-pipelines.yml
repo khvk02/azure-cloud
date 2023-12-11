@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'khvkazurecloud.ingress-petstoreservices'
+    environment: 'khvk02azurecloud.ingress-petstoreservices'
     strategy:
       runOnce:
         deploy:
